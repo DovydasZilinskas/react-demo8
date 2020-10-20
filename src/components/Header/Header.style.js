@@ -3,26 +3,24 @@ import { Link } from "react-router-dom";
 
 export const Header = styled.header`
   display: flex;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: center;
   padding: 1em;
-  border-bottom: 1px solid gray;
-  box-shadow: 0 4px 2px -2px gray;
 `;
 
-export const Logo = styled.img`
-  max-height: 40px;
-  max-width: 100%;
+export const Actions = styled.nav`
+  background-color: green;
+  border-bottom: 1px solid #fff;
 `;
-
-export const Actions = styled.nav``;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   font-weight: bold;
-  color: black;
+  color: #fff;
+  text-transform: uppercase;
   &:hover {
-    color: #eee;
+    color: #000;
     transition: 1s;
   }
   &:not(:last-child) {

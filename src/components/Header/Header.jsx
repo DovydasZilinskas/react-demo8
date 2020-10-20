@@ -1,19 +1,21 @@
 import React from "react";
 import * as S from "./Header.style";
-import { Link } from "react-router-dom";
-import logoImg from "../../assets/Logo_rinkuskiai.png";
+import Section from "../Section/Section";
 
 function Header() {
   return (
-    <S.Header>
-      <Link to="/">
-        <S.Logo src={logoImg} />
-      </Link>
-      <S.Actions>
-        <S.StyledLink to="/">Home</S.StyledLink>
-        <S.StyledLink to="/about">About</S.StyledLink>
-      </S.Actions>
-    </S.Header>
+    <S.Actions>
+      <Section fullWidth>
+        <S.Header>
+          <S.StyledLink to="/">Home</S.StyledLink>
+          <S.StyledLink to="/menu">Menu</S.StyledLink>
+          <S.StyledLink to="/services">Services</S.StyledLink>
+          <S.StyledLink to="/gallery">Gallery</S.StyledLink>
+          <S.StyledLink to="/blog">Blog</S.StyledLink>
+          <S.StyledLink to="/contact us ">Contact Us</S.StyledLink>
+        </S.Header>
+      </Section>
+    </S.Actions>
   );
 }
 
