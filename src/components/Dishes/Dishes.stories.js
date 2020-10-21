@@ -1,8 +1,12 @@
 import { storiesOf } from "@storybook/react";
 import React from "react";
 import Dishes from "./Dishes";
-import StoryRouter from "storybook-react-router";
 
-storiesOf("Dishes", module)
-  .addDecorator(StoryRouter())
-  .add("Dishes", () => <Dishes />);
+storiesOf("Dishes", module).add("Dishes", () => (
+  <Dishes
+    image="https://s2.15min.lt/images/photos/2013/04/30/big/vistienos-ir-grikiu-kotletai-517f8e601470c.jpg"
+    Title="Kotletai"
+    Ingredients="Agurkai, morkos"
+    Price="10"
+  ></Dishes>
+));
