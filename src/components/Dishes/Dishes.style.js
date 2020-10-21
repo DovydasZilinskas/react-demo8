@@ -17,3 +17,5 @@ export const DishImg = styled.img`
   max-height: 60px;
   object-fit: cover;
 `;
+
+export const TitleDiv = styled.div``;

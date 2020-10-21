@@ -1,15 +1,15 @@
 import React from "react";
 import * as S from "./Dishes.style";
 
-function Dishes({ image, Title, Ingredients, Price }) {
+function Dishes({ image, title, ingredients, price }) {
   return (
     <S.DishSection>
       <S.DishImg src={image} />
-      <div>
-        <h4>{Title}</h4>
-        <h5>{Ingredients}</h5>
-      </div>
-      <h4>${Price}</h4>
+      <S.TitleDiv>
+        <h4>{title}</h4>
+        <h5>{ingredients}</h5>
+      </S.TitleDiv>
+      <h4>${price}</h4>
     </S.DishSection>
   );
 }

@@ -1,10 +1,22 @@
 import React from "react";
 import * as S from "./FoodSection.style";
+import { Dishes } from "../";
 
-function FoodSection({ title }) {
+function FoodSection({ title, array }) {
   return (
     <S.Section>
-      <h3>{title}</h3>
+      <ul>
+        <h3>{title}</h3>
+        {array.map((dishes) => (
+          <Dishes
+            key={dishes.id}
+            title={dishes.title}
+            ingredients={dishes.ingredients}
+            price={dishes.price / 100}
+            image={dishes.image}
+          />
+        ))}
+      </ul>
     </S.Section>
   );
 }
