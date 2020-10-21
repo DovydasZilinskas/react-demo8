@@ -11,7 +11,7 @@ function FoodSection({ title, array }) {
           key={dishes.id}
           title={dishes.title}
           ingredients={dishes.ingredients}
-          price={dishes.price / 100}
+          price={dishes.price}
           image={dishes.image}
         />
       ))}

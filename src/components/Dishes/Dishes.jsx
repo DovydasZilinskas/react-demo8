@@ -9,7 +9,7 @@ function Dishes({ image, title, ingredients, price }) {
         <h4>{title}</h4>
         {ingredients}
       </S.TitleDiv>
-      <h4>${price}</h4>
+      <h4>${price / 100}</h4>
     </S.DishSection>
   );
 }
