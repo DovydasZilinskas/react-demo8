@@ -1,12 +1,11 @@
 import React from "react";
 import { Button, Section } from "../../components";
+// import * as S from "./Home.style";
 
 function Home() {
   return (
     <>
-      <Section background="#eee" maxWidth="max">
-        Welcome to my boilerplate
-      </Section>
+      <Section>Welcome to my boilerplate</Section>
       <Section>
         <Button color="secondary" handeClick={() => alert("Labas bl")}>
           Click me

@@ -1,17 +1,17 @@
 import styled from "styled-components";
 
 export const Button = styled.button`
-  background: ${(props) => (props.color === "primary" ? "#555" : "#eee")};
+  background: ${(props) => (props.color === "primary" ? "#555" : "#000")};
   display: inline-block;
   padding: 0.5em 3em;
-  border: 0.16em solid #ffffff;
+  border-color: black;
   margin: 0 0.3em 0.3em 0;
   box-sizing: border-box;
   text-decoration: none;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: ${(props) => (props.color === "primary" ? "#ffffff" : "black")};
+  color: ${(props) => (props.color === "primary" ? "#ffffff" : "#555")};
   text-align: center;
   transition: all 0.15s;
   &:hover {
