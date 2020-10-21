@@ -1,8 +1,12 @@
 import React from "react";
 import * as S from "./Dishes.style";
 
-function Dishes() {
-  return <div></div>;
+function Dishes({ image }) {
+  return (
+    <S.DishSection>
+      <S.DishImg src={image} />
+    </S.DishSection>
+  );
 }
 
 export default Dishes;
