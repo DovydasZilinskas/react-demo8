@@ -3,12 +3,10 @@ import styled from "styled-components";
 export const DishSection = styled.div`
   display: flex;
   align-items: center;
-  line-height: 0;
+  justify-content: space-between;
   text-transform: uppercase;
   border-bottom: 1px solid #eee;
-  & div {
-    margin: 0 10px;
-  }
+  width: 100%;
 `;
 
 export const DishImg = styled.img`
@@ -18,4 +16,11 @@ export const DishImg = styled.img`
   object-fit: cover;
 `;
 
-export const TitleDiv = styled.div``;
+export const TitleDiv = styled.div`
+  margin: 0 5px;
+  font-size: 11px;
+  & div {
+    font-size: 14px;
+    font-weight: bold;
+  }
+`;

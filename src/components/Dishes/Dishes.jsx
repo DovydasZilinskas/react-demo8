@@ -6,8 +6,8 @@ function Dishes({ image, title, ingredients, price }) {
     <S.DishSection>
       <S.DishImg src={image} />
       <S.TitleDiv>
-        <h4>{title}</h4>
-        <h5>{ingredients}</h5>
+        <div>{title}</div>
+        {ingredients}
       </S.TitleDiv>
       <h4>${price}</h4>
     </S.DishSection>
