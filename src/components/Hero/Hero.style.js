@@ -11,4 +11,5 @@ export const HeroImg = styled.div`
 
 export const HeroText = styled.div`
   padding-top: 150px;
+  line-height: 0.5;
 `;
