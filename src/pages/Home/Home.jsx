@@ -21,7 +21,7 @@ function Home() {
   return (
     <>
       <Section>
-        <h2>Menu</h2>
+        <S.Menu>Menu</S.Menu>
         <S.FlexBox>
           {dishes && <FoodSection title="Starter" array={dishes} />}
           {dishes2 && <FoodSection title="Soup" array={dishes2} />}
