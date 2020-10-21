@@ -10,9 +10,6 @@ function Home() {
     fetch("https://testioras.azurewebsites.net/main")
       .then((res) => res.json())
       .then((data) => setDishes(data));
-  }, []);
-
-  useEffect(() => {
     fetch("https://testioras.azurewebsites.net/soup")
       .then((res) => res.json())
       .then((data) => setDishesSoup(data));

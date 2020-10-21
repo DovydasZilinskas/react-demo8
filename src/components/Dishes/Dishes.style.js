@@ -7,6 +7,7 @@ export const DishSection = styled.div`
   text-transform: uppercase;
   border-bottom: 1px solid #eee;
   width: 100%;
+  line-height: 1.6;
 `;
 
 export const DishImg = styled.img`
@@ -19,8 +20,7 @@ export const DishImg = styled.img`
 export const TitleDiv = styled.div`
   margin: 0 5px;
   font-size: 11px;
-  & div {
-    font-size: 14px;
-    font-weight: bold;
+  & h4 {
+    margin: 0;
   }
 `;
