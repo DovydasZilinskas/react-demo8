@@ -15,6 +15,7 @@ export const Actions = styled.nav`
 `;
 
 export const StyledLink = styled(Link)`
+  font-size: 14px;
   text-decoration: none;
   font-weight: bold;
   color: #fff;

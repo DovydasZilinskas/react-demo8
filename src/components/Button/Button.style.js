@@ -4,7 +4,8 @@ export const Button = styled.button`
   background: ${(props) => (props.color === "primary" ? "#555" : "#000")};
   display: inline-block;
   padding: 0.5em 3em;
-  border-color: black;
+  border: none;
+  box-shadow: inset 0 0 0 1px black, inset 0 0 0 3px black, inset 0 0 0 4px #555;
   margin: 0 0.3em 0.3em 0;
   box-sizing: border-box;
   text-decoration: none;
